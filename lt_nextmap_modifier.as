@@ -70,15 +70,15 @@ void MapInit()
 			int nfaction = cvar_MapNotFoundAction.GetInt();
 			if(nfaction == 2)
 			{
-				currentMapId = Math.RandomLong(0, random_mapCycles.length() - 1);
+				currrentRndId = Math.RandomLong(0, random_mapCycles.length() - 1);
 			}
 			else if(nfaction == 1)
 			{
-				if(currentMap == random_mapCycles[currentMapId]) currentMapId++;
+				if(currrentRndId == random_mapCycles[currrentRndId]) currentMapId++;
 			}
 			else
 			{
-				currentMapId = 0;
+				currrentRndId = 0;
 			}
 		}
 		else if(rndmapid >= 0) 	currrentRndId = rndmapid + 1;
