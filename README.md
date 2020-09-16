@@ -2,7 +2,7 @@
   1 - Download  **lt_nextmap_modifier.as** and copy to **scripts/plugins** folder.
   2 - Open your **default_plugins.txt** in **svencoop** folder
   and put in;
-	```
+	```bash
 	"plugin"
 	{
 		"name" "Lt - Nextmap Modifier"
